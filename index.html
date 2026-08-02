@@ -225,11 +225,13 @@
 (function(){
   "use strict";
   const F = window.FESTIVALS || [];
-  const TODAY = new Date(2026, 6, 15); // 2026-07-15（アプリ基準日）
+  // 実際の今日（端末のローカル日付）。時刻は切り捨てて 00:00 に。
+  const _now = new Date();
+  const TODAY = new Date(_now.getFullYear(), _now.getMonth(), _now.getDate());
   const WD = ["日","月","火","水","木","金","土"];
 
   // ---- date helpers ----
-  const ymd = d => d.toISOString().slice(0,10);
+  const ymd = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
   const parse = s => { const [y,m,d]=s.split("-").map(Number); return new Date(y,m-1,d); };
   function inRange(dateStr, f){
     return f.dates.some(r => dateStr >= r.start && dateStr <= r.end);
