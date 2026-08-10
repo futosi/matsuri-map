@@ -1,4 +1,4 @@
-// お祭りデータ（世田谷＋隣接エリア / 2026年 / 最終更新: 2026-08-02）
+// お祭りデータ（世田谷＋隣接エリア / 2026年 / 最終更新: 2026-08-10）
 // status: "confirmed" = 出典に2026年（または固定日）の日程あり
 //         "annual"    = 例年開催だが2026年の日程は未定・目安（要・最新確認）
 // area   : "世田谷区" / "杉並区" / "目黒区" / "大田区" / "川崎市"（省略時は "世田谷区" 扱い）
@@ -527,11 +527,11 @@ window.FESTIVALS = [
     place: "田道広場公園ほか（目黒1丁目）",
     lat: 35.6320, lng: 139.7098,
     category: "夏祭り",
-    status: "annual",
-    dates: [ { start: "2026-09-27", end: "2026-09-27" } ],
-    time: "日中（例年9月下旬）",
-    desc: "落語「目黒のさんま」にちなみ、気仙沼直送のさんまを焼いて振る舞う区民まつり。2026年の日程は目安。",
-    url: "https://www.city.meguro.tokyo.jp/bunkasports/kankou/event-matsuri/index.html"
+    status: "confirmed",
+    dates: [ { start: "2026-10-11", end: "2026-10-11" } ],
+    time: "日中",
+    desc: "落語「目黒のさんま」にちなみ、気仙沼直送のさんまを焼いて振る舞う区民まつり。第50回(2026年)は10/11(日)開催、目黒区公式サイトで告知済み。",
+    url: "https://www.city.meguro.tokyo.jp/bunka/bunkasports/kankou/kuminmatsuri47.html"
   },
   {
     id: "meguro-otori",
